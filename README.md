@@ -8,12 +8,9 @@ A simple and efficient URL shortening service that allows users to shorten long 
 - Shorten long URLs to compact, shareable links.
 - Redirect users from shortened links to original URLs.
 - Easy-to-use web interface.
-- Built using **Node.js**, **Express.js**, and **MongoDB**.
+- Built using **Node.js**, **Express.js**
 - RESTful API support for programmatic URL shortening.
 
-## Demo
-
-Check out the live demo [here](#).
 
 ## Installation
 
@@ -50,7 +47,7 @@ Follow these steps to get the project running on your local machine.
    npm start
    ```
 
-5. Open your browser and navigate to `http://localhost:3000`.
+5. Open your browser and navigate to `http://localhost:3001`.
 
 ## Usage
 
@@ -70,7 +67,7 @@ Follow these steps to get the project running on your local machine.
 - Response:
   ```json
   {
-    "shortUrl": "http://localhost:3000/abc123"
+    "shortUrl": "http://localhost:3001/abc123"
   }
   ```
 
@@ -86,7 +83,6 @@ URL_Shortner/
 ├── routes/         # API and view routes
 ├── models/         # Database schemas
 ├── views/          # HTML templates (if applicable)
-├── .env            # Environment variables
 ├── server.js       # Main application file
 ├── package.json    # Dependencies and scripts
 └── README.md       # Project documentation
@@ -94,9 +90,8 @@ URL_Shortner/
 
 ## Technologies Used
 
-- **Frontend**: HTML, CSS, Bootstrap
+- **Frontend**: HTML, CSS
 - **Backend**: Node.js, Express.js
-- **Database**: MongoDB
 
 ## Contributing
 
@@ -106,9 +101,3 @@ Contributions are welcome! Please fork the repository and submit a pull request 
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-## Contact
-
-For any questions or suggestions, feel free to reach out:
-
-- GitHub: [sandeep1404-praj](https://github.com/sandeep1404-praj)
-- Email: your_email@example.com
