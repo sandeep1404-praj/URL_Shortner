@@ -1,73 +1,86 @@
 
-URL Shortener
+# URL Shortener
+
 A simple and efficient URL shortening service that allows users to shorten long URLs for easier sharing and tracking.
 
-Features
-Shorten long URLs to compact, shareable links.
-Redirect users from shortened links to original URLs.
-Easy-to-use web interface.
-Built using Node.js, Express.js, and MongoDB.
-RESTful API support for programmatic URL shortening.
-Demo
-Check out the live demo here.
+## Features
 
-Installation
+- Shorten long URLs to compact, shareable links.
+- Redirect users from shortened links to original URLs.
+- Easy-to-use web interface.
+- Built using **Node.js**, **Express.js**, and **MongoDB**.
+- RESTful API support for programmatic URL shortening.
+
+## Demo
+
+Check out the live demo [here](#).
+
+## Installation
+
 Follow these steps to get the project running on your local machine.
 
-Prerequisites
-Node.js installed.
-MongoDB running locally or on a cloud server.
-Steps
-Clone the repository:
+### Prerequisites
 
-bash
-Copy code
-git clone https://github.com/sandeep1404-praj/URL_Shortner.git
-cd URL_Shortner
-Install dependencies:
+- [Node.js](https://nodejs.org/) installed.
+- [MongoDB](https://www.mongodb.com/) running locally or on a cloud server.
 
-bash
-Copy code
-npm install
-Configure environment variables: Create a .env file in the root directory and add the following:
+### Steps
 
-env
-Copy code
-PORT=3001
-MONGO_URI=your_mongodb_connection_string
-BASE_URL=http://localhost:3001
-Start the application:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/sandeep1404-praj/URL_Shortner.git
+   cd URL_Shortner
+   ```
 
-bash
-Copy code
-npm start
-Open your browser and navigate to http://localhost:3001.
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-Usage
-Shorten a URL
-Enter a long URL into the input field on the homepage.
-Click "Shorten" to generate a shortened link.
-API Endpoints
-Shorten a URL
-POST /api/url/shorten
-Request Body:
-json
-Copy code
-{
-  "longUrl": "https://example.com/very/long/url"
-}
-Response:
-json
-Copy code
-{
-  "shortUrl": "http://localhost:3001/abc123"
-}
-Redirect to Original URL
-GET /:shortCode
-Example: http://localhost:3000/abc123 will redirect to the original URL.
-Folder Structure
-bash
-Copy code
+3. Configure environment variables:
+   Create a `.env` file in the root directory and add the following:
+   ```env
+   PORT=3000
+   MONGO_URI=your_mongodb_connection_string
+   BASE_URL=http://localhost:3000
+   ```
+
+4. Start the application:
+   ```bash
+   npm start
+   ```
+
+5. Open your browser and navigate to `http://localhost:3000`.
+
+## Usage
+
+### Shorten a URL
+1. Enter a long URL into the input field on the homepage.
+2. Click "Shorten" to generate a shortened link.
+
+### API Endpoints
+#### Shorten a URL
+- **POST** `/api/url/shorten`
+- Request Body:
+  ```json
+  {
+    "longUrl": "https://example.com/very/long/url"
+  }
+  ```
+- Response:
+  ```json
+  {
+    "shortUrl": "http://localhost:3000/abc123"
+  }
+  ```
+
+#### Redirect to Original URL
+- **GET** `/:shortCode`
+- Example: `http://localhost:3000/abc123` will redirect to the original URL.
+
+## Folder Structure
+
+```
 URL_Shortner/
 ├── public/         # Static files (CSS, JS, images)
 ├── routes/         # API and view routes
@@ -77,15 +90,25 @@ URL_Shortner/
 ├── server.js       # Main application file
 ├── package.json    # Dependencies and scripts
 └── README.md       # Project documentation
-Technologies Used
-Frontend: HTML, CSS, Bootstrap
-Backend: Node.js, Express.js
-Database: MongoDB
-Contributing
+```
+
+## Technologies Used
+
+- **Frontend**: HTML, CSS, Bootstrap
+- **Backend**: Node.js, Express.js
+- **Database**: MongoDB
+
+## Contributing
+
 Contributions are welcome! Please fork the repository and submit a pull request for review.
 
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
+## License
 
-Contact
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Contact
+
 For any questions or suggestions, feel free to reach out:
+
+- GitHub: [sandeep1404-praj](https://github.com/sandeep1404-praj)
+- Email: your_email@example.com
