@@ -37,9 +37,8 @@ Follow these steps to get the project running on your local machine.
 3. Configure environment variables:
    Create a `.env` file in the root directory and add the following:
    ```env
-   PORT=3000
-   MONGO_URI=your_mongodb_connection_string
-   BASE_URL=http://localhost:3000
+   PORT=3001
+   BASE_URL=http://localhost:3001
    ```
 
 4. Start the application:
