@@ -82,7 +82,7 @@ URL_Shortner/
 ├── routes/         # API and view routes
 ├── models/         # Database schemas
 ├── views/          # HTML templates (if applicable)
-├── server.js       # Main application file
+├── app.js          # Main application file
 ├── package.json    # Dependencies and scripts
 └── README.md       # Project documentation
 ```
